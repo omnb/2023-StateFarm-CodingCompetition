@@ -28,7 +28,7 @@ class Enhancements:
         self.__disaster_data = self.load_json_from_file(
             self.DISASTERS_FILEPATH)
         self.severity_visualization()
-        self.heatMap()
+        
 
     # Helper Methods
 
@@ -40,7 +40,6 @@ class Enhancements:
 
         return data
     def severity_visualization(self):
-        print('he')
         df = pd.DataFrame(self.__claim_data)
 
         # Plot a bar chart of severity_rating
