@@ -201,11 +201,7 @@ class SimpleDataTool:
         for agent in self.__agent_data:
             if agent["state"] == state:
                 return agent["secondary_language"]
-            # if agent["secondary_language"]:
-            #     mapLang[agent["secondary_language"]] = mapLang.get(agent['secondary_language'], 0) + 1
-            #     if mapLang[agent["secondary_language"]] > maxCount:
-            #         res = agent["secondary_language"]
-            #         maxCount = mapLang[agent["secondary_language"]]
+
         return res
             
         """Returns the name of the most spoken language by agents (besides English) for a specific state
